@@ -136,7 +136,10 @@ console.log('sumOfMarks=>',sumOfMarks)
 
 // return total marks of student whose marks is grater than 60 after adding 20 marks have
 // been added to those who scored less than 80
+//sum of total marks
 
-let totalAfterGrace=students.filter((stu)=>stu.marks<60).map((stud)=>stud.marks+20)
+let totalAfterGrace=students.filter((stu)=>stu.marks<60).map((stud)=>stud.marks+20).reduce((accum,curr)=>accum+curr,0)
 
 console.log(totalAfterGrace)
+
+//
